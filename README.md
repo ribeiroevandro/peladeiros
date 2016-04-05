@@ -7,6 +7,8 @@
 - [Express](https://www.npmjs.com/package/express)
 - [Mongoose](https://www.npmjs.com/package/mongoose)
 - [Body Parser](https://www.npmjs.com/package/body-parser)
+- [Bcrypt NodeJS](https://www.npmjs.com/package/bcrypt-nodejs)
+- [JWT](https://github.com/auth0/node-jsonwebtoken)
 
 ## TO-DO
 

@@ -6,7 +6,7 @@ exports.save = function(nome, telefone, callback) {
 		'telefone' : telefone
 	}).save(function(error, jogador) {
 		if (error) {
-			callback({error: 'Não foi possível salvar'});
+			callback({error: 'Não foi possível salvar o jogador.'});
 		} else {
 			callback(jogador);
 		}
@@ -16,7 +16,7 @@ exports.save = function(nome, telefone, callback) {
 exports.list = function(callback) {
 	Jogador.find({}, function(error, jogador) {
 		if (error) {
-			callback({error: 'Não foi possível encontrar os jogadores'});
+			callback({error: 'Não foi possível encontrar os jogadores.'});
 		} else {
 			callback(jogador);
 		}
@@ -26,7 +26,7 @@ exports.list = function(callback) {
 exports.delete = function(id, callback) {
 	Jogador.findById(id, function(error, jogador) {
 		if (error) {
-			callback({error: 'Não foi possível excluir'})
+			callback({error: 'Não foi possível excluir jogador.'})
 		} else {
 			jogador.remove(function(error) {
 				if (!error) {
